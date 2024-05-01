@@ -1,0 +1,116 @@
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.logo-text {
+  color: black;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 800;
+  line-height: 40px;
+  opacity: 1;
+  @media screen and (max-width: 767px) {
+    font-size: 17px;
+  }
+  @media screen and (min-width: 767px) {
+    font-size: 32px;
+  }
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  font-family: sofia-pro, "Helvetica Neue", Arial, sans-serif;
+  font-size: 27px;
+  line-height: 32px;
+  color: #4b4d4c;
+  text-transform: none;
+}
+
+.promo-text span {
+  color: green;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 800;
+  opacity: 10;
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 767px) {
+    font-size: 20px;
+  }
+}
+
+.home-page-photo {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 767px) {
+    width: 100%;
+  }
+}
+
+.transparent-img1 {
+  opacity: 0.6;
+  width: 106.5%;
+}
+
+.transparent-img2,
+.transparent-img3 {
+  opacity: 0.6;
+  width: 100%;
+}
+
+.discount-button {
+  width: 300px;
+  height: auto;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  border-style: none;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 24px;
+  background-color: darkorange;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.prepare-icons {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 767px) {
+    width: 30%;
+  }
+}
+
+.mobile-screen {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.prepare-icons-title {
+  @media screen and (min-width: 767px) {
+    font-size: 2em;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 1.5em;
+  }
+}
+
+.button-padding {
+  margin-top: 3em;
+}

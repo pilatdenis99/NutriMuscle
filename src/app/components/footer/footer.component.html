@@ -1,0 +1,93 @@
+<nz-footer class="footer-config">
+  <div
+    [class.align-items-center]="!isMobile"
+    [style.padding-left.em]="!isMobile ? '9' : '0'"
+  >
+    <nz-row>
+      <nz-col [nzSpan]="isMobile ? 24 : 8">
+        <nz-row>
+          <nz-col nzSpan="24">
+            <img class="footer-logo-icon" src="assets/nutriMuscle.png" />
+          </nz-col>
+        </nz-row>
+        @if (!isMobile) {
+          <nz-row>
+            <nz-col nzSpan="24">
+              <span>*Rezultatele pot varia</span>
+            </nz-col>
+          </nz-row>
+          <nz-row>
+            <nz-col nzSpan="17">
+              <span>
+                NutriMuscle este o marcă înregistrată a NutriMuscle, LLC, Reg.
+                U.S. Pat. & Tm. Off.
+              </span>
+            </nz-col>
+          </nz-row>
+          <nz-row>
+            <nz-col nzSpan="24"> © 2024 NutriMuscle</nz-col>
+          </nz-row>
+        }
+      </nz-col>
+      <nz-col [nzSpan]="isMobile ? 14 : 8">
+        <nz-row>
+          <nz-col nzSpan="24">
+            <h2>Despre Noi</h2>
+          </nz-col>
+        </nz-row>
+        <nz-row>
+          <ul>
+            <li><a href="#">Povestea Noastra</a></li>
+            <li><a href="#">Politica de Confidențialitate</a></li>
+            <li><a href="#">Politica de Rambursare</a></li>
+            <li><a href="#">Termenii Serviciului</a></li>
+          </ul>
+        </nz-row>
+      </nz-col>
+      <nz-col [nzSpan]="isMobile ? 10 : 8">
+        <nz-row>
+          <nz-col nzSpan="24">
+            <h2>Suport</h2>
+          </nz-col>
+          <ul>
+            <li><a href="#">Centru de Asistență</a></li>
+            <li><a href="#">Trimite-ne un Email</a></li>
+          </ul>
+        </nz-row>
+      </nz-col>
+    </nz-row>
+  </div>
+  <div [class.align-items-center]="!isMobile">
+    <nz-row [class.align-items-center]="!isMobile">
+      <nz-col nzSpan="24">
+        <h2>Urmărește-ne</h2>
+      </nz-col>
+    </nz-row>
+  </div>
+  <nz-row>
+    <nz-col [class.align-items-center]="!isMobile" nzSpan="24">
+      <ul class="media-icons">
+        <li>
+          <a href="#"
+            ><span nz-icon nzTheme="outline" nzType="facebook"></span
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><span nz-icon nzTheme="outline" nzType="twitter"></span
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><span nz-icon nzTheme="outline" nzType="youtube"></span
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><span nz-icon nzTheme="outline" nzType="instagram"></span
+          ></a>
+        </li>
+      </ul>
+    </nz-col>
+  </nz-row>
+</nz-footer>

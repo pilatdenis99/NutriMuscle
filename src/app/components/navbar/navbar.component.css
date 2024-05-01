@@ -1,0 +1,78 @@
+nz-header {
+  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nz-breadcrumb {
+  margin: 1rem 0;
+}
+
+.login-button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid orange;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: orange;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  @media screen and (max-width: 767px) {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    color: black;
+  }
+
+  & span {
+    color: inherit;
+  }
+}
+
+.transparent-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ant-layout-header {
+  position: sticky;
+  top: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+  line-height: 3rem;
+  background: white;
+  z-index: 1000;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-menu-icon {
+    display: none;
+  }
+}
+
+.logo-size {
+  @media screen and (max-width: 767px) {
+    width: 20%;
+  }
+  @media screen and (min-width: 767px) {
+    width: 4%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.ant-menu-item {
+  font-size: 1.5em;
+  font-style: italic;
+}

@@ -1,0 +1,52 @@
+<nz-row class="diet-type-select">
+  <nz-col
+    class="align-items-center padding-top"
+    nzSpan="24"
+    style="padding-bottom: 10px"
+  >
+    <h2>Alegeti tipul de dieta:</h2>
+    <nz-select
+      (ngModelChange)="log($event)"
+      [(ngModel)]="selectedValue"
+      class="carousel-select"
+      nzAllowClear
+      nzPlaceHolder="Alege dieta"
+      style="display: inline"
+    >
+      <nz-option
+        *ngFor="let option of optionList"
+        [nzLabel]="option"
+        [nzValue]="option"
+      ></nz-option>
+    </nz-select>
+  </nz-col>
+</nz-row>
+
+<div class="carousel-container">
+  <ngx-slick-carousel
+    #slickModal="slick-carousel"
+    [config]="slideConfig"
+    class="carousel"
+  >
+    <div *ngFor="let slide of slides" ngxSlickItem>
+      <div class="carousel-slide">
+        <img [src]="slide.img" class="carousel-image" />
+        <span class="carousel-title">{{ slide.title }}</span>
+      </div>
+      <div class="align-items-center">
+        <span class="nutritional-info">
+          Calorii:
+          <span class="calories">{{ slide.calories }}</span>
+        </span>
+      </div>
+
+      <div class="align-items-center">
+        <span class="nutritional-info">
+          Proteina: <span class="protein">{{ slide.protein }}</span
+          >, Carbohidrati: <span class="carbs">{{ slide.carbs }}</span
+          >, Grasimi: <span class="fat">{{ slide.fat }}</span>
+        </span>
+      </div>
+    </div>
+  </ngx-slick-carousel>
+</div>
